@@ -4,7 +4,9 @@ from pinecone import Pinecone
 from sentence_transformers import SentenceTransformer
 import requests
 
-PINECONE_API_KEY = 'YOUR_PINECONE_API_KEY'
+import streamlit as st
+PINECONE_API_KEY = st.secrets["PINECONE_API_KEY"]
+
 INDEX_NAME = 'lex-fridman-podcast'
 EMBED_MODEL = 'all-MiniLM-L6-v2'
 LLM_MODEL = 'mistral'
@@ -62,3 +64,4 @@ with open("app.py", "w") as f:
     f.write(app_code)
 
 print("✅ app.py created in your current folder!")
+
