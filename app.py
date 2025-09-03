@@ -65,3 +65,7 @@ with open("app.py", "w") as f:
 
 print("✅ app.py created in your current folder!")
 
+
+# https://lex-fridman-4gqh39j66uspe8q76rvfzr.streamlit.app/
+
+
